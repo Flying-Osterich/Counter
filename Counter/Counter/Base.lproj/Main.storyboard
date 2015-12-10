@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHL-rx-xOA">
+                                <rect key="frame" x="20" y="165" width="270" height="270"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KHL-rx-xOA" secondAttribute="height" multiplier="1:1" id="lc1-kd-BxW"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="jQg-3f-jGn" kind="embed" id="KMi-yn-fYg"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-Xl-W8w">
+                                <rect key="frame" x="310" y="165" width="270" height="270"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fd4-Xl-W8w" secondAttribute="height" multiplier="1:1" id="eMF-wv-fn0"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="jQg-3f-jGn" kind="embed" id="SIa-6o-fU4"/>
+                                </connections>
+                            </containerView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="hqV-tl-on7">
+                                <rect key="frame" x="60" y="534" width="480" height="66"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Sxf-pv-IxC"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KHL-rx-xOA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="750" id="Ffo-3D-YgO"/>
+                            <constraint firstItem="Fd4-Xl-W8w" firstAttribute="leading" secondItem="KHL-rx-xOA" secondAttribute="trailing" constant="20" id="I3K-Wk-Tkm"/>
+                            <constraint firstItem="KHL-rx-xOA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MYn-vv-Rjf"/>
+                            <constraint firstItem="hqV-tl-on7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N9c-x1-C7G"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hqV-tl-on7" secondAttribute="bottom" id="TSa-5Z-ZdI"/>
+                            <constraint firstItem="Fd4-Xl-W8w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="750" id="Y85-X6-e2E"/>
+                            <constraint firstItem="hqV-tl-on7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KHL-rx-xOA" secondAttribute="bottom" constant="8" id="cGh-ZI-c6N"/>
+                            <constraint firstItem="KHL-rx-xOA" firstAttribute="bottom" secondItem="Fd4-Xl-W8w" secondAttribute="bottom" id="cJ2-Jv-mEA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fd4-Xl-W8w" secondAttribute="trailing" id="hsb-E0-dVN"/>
+                            <constraint firstItem="KHL-rx-xOA" firstAttribute="top" secondItem="Fd4-Xl-W8w" secondAttribute="top" id="nGW-OD-HZa"/>
+                            <constraint firstItem="KHL-rx-xOA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yJM-6u-iTV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MYn-vv-Rjf"/>
+                                <exclude reference="cJ2-Jv-mEA"/>
+                                <exclude reference="cGh-ZI-c6N"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="MYn-vv-Rjf"/>
+                                <include reference="cJ2-Jv-mEA"/>
+                                <include reference="cGh-ZI-c6N"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="leftPlayerContainer" destination="KHL-rx-xOA" id="Jmr-7i-Ra8"/>
+                        <outlet property="rightPlayerContainer" destination="Fd4-Xl-W8w" id="y7A-tF-Hsw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="390"/>
+        </scene>
+        <!--Counter View Controller-->
+        <scene sceneID="WsJ-hU-vAM">
+            <objects>
+                <viewController id="jQg-3f-jGn" customClass="CounterViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M3n-Bv-YBJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="mpt-LW-L7a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ehp-Se-v8A">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7p-a7-rSt" userLabel="Loyalty Toggle">
+                                <rect key="frame" x="46" y="240" width="43" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Loyalty">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" title="10=💀">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="10=💀"/>
+                                <state key="focused" title="10=💀"/>
+                                <connections>
+                                    <action selector="toggleTapped:" destination="JXG-BA-ie5" eventType="touchUpInside" id="57D-Po-fAR"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="nWO-sW-bHG" userLabel="Loyalty Column">
+                                <rect key="frame" x="46" y="145" width="43" height="89"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpP-Cq-XTN">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterPlusButtonTapped:" destination="JXG-BA-ie5" eventType="touchUpInside" id="au7-cg-3tZ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-84-JDR" userLabel="Loyalty Display">
+                                        <rect key="frame" x="0.0" y="36" width="43" height="17"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3i-Vk-JF6">
+                                        <rect key="frame" x="0.0" y="59" width="43" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterMinusButtonTapped:" destination="JXG-BA-ie5" eventType="touchUpInside" id="Znu-V3-K3d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="jDa-qr-Ufw"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xz-oA-C4i" userLabel="Poison Toggle">
+                                <rect key="frame" x="46" y="112" width="43" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Poison">
+                                    <color key="titleColor" red="0.1834797497" green="1" blue="0.25362264220000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled" title="10=💀"/>
+                                <state key="selected" title="10=💀"/>
+                                <state key="focused" title="10=💀"/>
+                                <connections>
+                                    <action selector="toggleTapped:" destination="YdU-aN-W2i" eventType="touchUpInside" id="HmX-Yc-8nY"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-Mj-GH8" userLabel="Poison Column">
+                                <rect key="frame" x="46" y="23" width="43" height="83.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRH-W4-KDI">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" red="0.1834797497" green="1" blue="0.25362264220000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterPlusButtonTapped:" destination="YdU-aN-W2i" eventType="touchUpInside" id="2fP-fM-NbX"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL1-Cd-pOU" userLabel="Poison Display">
+                                        <rect key="frame" x="0.0" y="52" width="43" height="31.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" red="0.1834797497" green="1" blue="0.25362264220000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="2H6-ef-7D9"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-qF-Oc4" userLabel="Health Column">
+                                <rect key="frame" x="114" y="15" width="43" height="239.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF0-St-OgZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="counterPlusFiveButtonTapped:" destination="vOl-Rw-h5s" eventType="touchUpInside" id="7AU-JS-Py5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h50-Sd-raC">
+                                        <rect key="frame" x="0.0" y="52" width="43" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="counterPlusButtonTapped:" destination="vOl-Rw-h5s" eventType="touchUpInside" id="xFc-zq-ElF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N9-5N-Vwk" userLabel="Health Display">
+                                        <rect key="frame" x="0.0" y="104" width="43" height="31.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NG9-Bq-jdm">
+                                        <rect key="frame" x="0.0" y="143" width="43" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" red="0.59068226439790572" green="0.070104619917031624" blue="0.30049545742891831" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterMinusButtonTapped:" destination="vOl-Rw-h5s" eventType="touchUpInside" id="uFI-0D-NGb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sge-Jo-GGH">
+                                        <rect key="frame" x="0.0" y="195" width="43" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.59068226440000005" green="0.07010461992" blue="0.3004954574" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterMinusFiveButtonTapped:" destination="vOl-Rw-h5s" eventType="touchUpInside" id="KY0-dv-35n"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="5Mh-AT-p96"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grX-TX-mad">
+                                <rect key="frame" x="188" y="15" width="35" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9VU-6M-fny"/>
+                                </constraints>
+                                <state key="normal" title="reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="jQg-3f-jGn" eventType="touchUpInside" id="7Sr-Pz-S2l"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ii0-ri-HUu" userLabel="Extra One Column">
+                                <rect key="frame" x="184" y="44" width="43" height="89"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxq-bR-Gnd">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterPlusButtonTapped:" destination="tx8-qu-ikb" eventType="touchUpInside" id="gLZ-oI-N71"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOm-1r-UTF" userLabel="Extra One Display">
+                                        <rect key="frame" x="0.0" y="36" width="43" height="17"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szx-sV-mlU">
+                                        <rect key="frame" x="0.0" y="59" width="43" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterMinusButtonTapped:" destination="tx8-qu-ikb" eventType="touchUpInside" id="Prk-O6-Pv9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="JxO-WK-p9U"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="kt7-aO-rtg" userLabel="Extra Two Column">
+                                <rect key="frame" x="184" y="145" width="43" height="89"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBu-6z-lUL">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterPlusButtonTapped:" destination="wHM-y6-PVB" eventType="touchUpInside" id="ejs-fN-a9C"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bf-B7-363" userLabel="Extra Two Display">
+                                        <rect key="frame" x="0.0" y="36" width="43" height="17"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ui-ms-H7D">
+                                        <rect key="frame" x="0.0" y="59" width="43" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterMinusButtonTapped:" destination="wHM-y6-PVB" eventType="touchUpInside" id="urN-zn-GZN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="bpE-jZ-pV3"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFf-Ss-QcC">
+                                <rect key="frame" x="167" y="240" width="77" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Add Counter"/>
+                                <connections>
+                                    <action selector="addCounter:" destination="jQg-3f-jGn" eventType="touchUpInside" id="fzR-j1-TvU"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAY-FP-7sJ" userLabel="Poison Defeat Overlay">
+                                <rect key="frame" x="0.0" y="0.0" width="270" height="270"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU HAVE BEEN POISONED TO DEATH" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqQ-3h-Ret">
+                                        <rect key="frame" x="55" y="64" width="160" height="142"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="142" id="cdB-Va-cOB"/>
+                                            <constraint firstAttribute="width" constant="160" id="fGA-e6-Vab"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" red="0.1834797497" green="1" blue="0.25362264220000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JqQ-3h-Ret" firstAttribute="centerX" secondItem="EAY-FP-7sJ" secondAttribute="centerX" id="OhV-8r-CzY"/>
+                                    <constraint firstItem="JqQ-3h-Ret" firstAttribute="centerY" secondItem="EAY-FP-7sJ" secondAttribute="centerY" id="rce-9y-bi7"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ePI-aW-kaT" appends="YES" id="rnK-i2-l6C"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3U0-af-W45" userLabel="Health Defeat Overlay">
+                                <rect key="frame" x="16" y="0.0" width="238" height="270"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU ARE DEFEATED" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSs-ut-L4R">
+                                        <rect key="frame" x="63" y="84" width="111" height="102"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="111" id="339-4q-h4H"/>
+                                            <constraint firstAttribute="height" constant="102" id="9Fc-qI-WLa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="tSs-ut-L4R" firstAttribute="centerX" secondItem="3U0-af-W45" secondAttribute="centerX" id="NIm-sL-S7Y"/>
+                                    <constraint firstItem="tSs-ut-L4R" firstAttribute="centerY" secondItem="3U0-af-W45" secondAttribute="centerY" id="vdm-rK-COr"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1cy-YE-d2g" appends="YES" id="ivx-tb-BmV"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="EAY-FP-7sJ" firstAttribute="height" secondItem="ehp-Se-v8A" secondAttribute="height" id="0H0-sQ-Jdm"/>
+                            <constraint firstItem="grX-TX-mad" firstAttribute="top" secondItem="r3a-qF-Oc4" secondAttribute="top" id="0yx-23-YWe"/>
+                            <constraint firstItem="3U0-af-W45" firstAttribute="centerX" secondItem="ehp-Se-v8A" secondAttribute="centerX" id="2aI-EO-iTZ"/>
+                            <constraint firstItem="3U0-af-W45" firstAttribute="centerY" secondItem="ehp-Se-v8A" secondAttribute="centerY" id="2h1-wJ-IkU"/>
+                            <constraint firstItem="1xz-oA-C4i" firstAttribute="centerX" secondItem="pyQ-Mj-GH8" secondAttribute="centerX" id="2vX-98-oMb"/>
+                            <constraint firstItem="EAY-FP-7sJ" firstAttribute="width" secondItem="ehp-Se-v8A" secondAttribute="width" id="7Da-BA-qhQ"/>
+                            <constraint firstItem="EAY-FP-7sJ" firstAttribute="centerX" secondItem="ehp-Se-v8A" secondAttribute="centerX" id="BRr-qF-haI"/>
+                            <constraint firstItem="grX-TX-mad" firstAttribute="leading" secondItem="r3a-qF-Oc4" secondAttribute="trailing" constant="31" id="C0K-tA-cpC"/>
+                            <constraint firstItem="BFf-Ss-QcC" firstAttribute="centerX" secondItem="grX-TX-mad" secondAttribute="centerX" id="FQM-gI-BKk"/>
+                            <constraint firstItem="r3a-qF-Oc4" firstAttribute="centerX" secondItem="ehp-Se-v8A" secondAttribute="centerX" id="FlB-5p-Pz3"/>
+                            <constraint firstItem="3U0-af-W45" firstAttribute="leading" secondItem="ehp-Se-v8A" secondAttribute="leadingMargin" id="Fr8-2e-WOY"/>
+                            <constraint firstItem="EAY-FP-7sJ" firstAttribute="centerY" secondItem="ehp-Se-v8A" secondAttribute="centerY" id="GOh-qd-okT"/>
+                            <constraint firstItem="kt7-aO-rtg" firstAttribute="top" secondItem="ii0-ri-HUu" secondAttribute="bottom" constant="12" id="Gui-8F-0bW"/>
+                            <constraint firstItem="r3a-qF-Oc4" firstAttribute="centerY" secondItem="ehp-Se-v8A" secondAttribute="centerY" id="H5h-oI-NaH"/>
+                            <constraint firstItem="t7p-a7-rSt" firstAttribute="width" secondItem="nWO-sW-bHG" secondAttribute="width" id="JcO-F0-2YQ"/>
+                            <constraint firstItem="r3a-qF-Oc4" firstAttribute="leading" secondItem="nWO-sW-bHG" secondAttribute="trailing" constant="25" id="LuC-Hy-CuJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3U0-af-W45" secondAttribute="trailing" id="Rwi-fi-BMp"/>
+                            <constraint firstItem="kt7-aO-rtg" firstAttribute="centerX" secondItem="grX-TX-mad" secondAttribute="centerX" id="TTc-sI-ubQ"/>
+                            <constraint firstItem="3U0-af-W45" firstAttribute="top" secondItem="M3n-Bv-YBJ" secondAttribute="bottom" id="W51-4k-LMv"/>
+                            <constraint firstItem="BFf-Ss-QcC" firstAttribute="top" secondItem="kt7-aO-rtg" secondAttribute="bottom" constant="6" id="ZAA-KK-7vZ"/>
+                            <constraint firstItem="ii0-ri-HUu" firstAttribute="centerX" secondItem="grX-TX-mad" secondAttribute="centerX" id="a0H-lY-w21"/>
+                            <constraint firstItem="nWO-sW-bHG" firstAttribute="top" secondItem="1xz-oA-C4i" secondAttribute="bottom" constant="5" id="a8n-Ls-m1x"/>
+                            <constraint firstItem="t7p-a7-rSt" firstAttribute="centerX" secondItem="nWO-sW-bHG" secondAttribute="centerX" id="cnr-La-Owc"/>
+                            <constraint firstItem="1xz-oA-C4i" firstAttribute="top" secondItem="pyQ-Mj-GH8" secondAttribute="bottom" constant="6" id="dGx-E9-bRN"/>
+                            <constraint firstItem="t7p-a7-rSt" firstAttribute="top" secondItem="nWO-sW-bHG" secondAttribute="bottom" constant="6" id="gj6-0w-Iwc"/>
+                            <constraint firstItem="1xz-oA-C4i" firstAttribute="width" secondItem="pyQ-Mj-GH8" secondAttribute="width" id="lJl-f8-UNC"/>
+                            <constraint firstItem="r3a-qF-Oc4" firstAttribute="leading" secondItem="pyQ-Mj-GH8" secondAttribute="trailing" constant="25" id="nAj-Nh-gp1"/>
+                            <constraint firstItem="ii0-ri-HUu" firstAttribute="top" secondItem="grX-TX-mad" secondAttribute="bottom" constant="8" id="oI0-La-L4f"/>
+                            <constraint firstItem="nWO-sW-bHG" firstAttribute="top" secondItem="kt7-aO-rtg" secondAttribute="top" id="rfY-7G-oq4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addCounter" destination="BFf-Ss-QcC" id="Nmd-in-FVD"/>
+                        <outlet property="extraOneCounterController" destination="tx8-qu-ikb" id="9nG-1u-FtS"/>
+                        <outlet property="extraTwoCounterController" destination="wHM-y6-PVB" id="EvR-Zt-4MB"/>
+                        <outlet property="healthCounterController" destination="vOl-Rw-h5s" id="ith-R9-YK3"/>
+                        <outlet property="loyalityCounterController" destination="JXG-BA-ie5" id="gyX-Te-0Jt"/>
+                        <outlet property="poisonCounterController" destination="YdU-aN-W2i" id="tyN-gg-jgV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kmb-FA-62A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="vOl-Rw-h5s" customClass="HealthCounterController" customModule="Counter" customModuleProvider="target">
+                    <connections>
+                        <outlet property="column" destination="r3a-qF-Oc4" id="l8s-ow-Cks"/>
+                        <outlet property="defeatController" destination="74I-5Y-reB" id="6lo-9J-pxo"/>
+                        <outlet property="display" destination="3N9-5N-Vwk" id="BYn-7A-JbY"/>
+                    </connections>
+                </customObject>
+                <customObject id="74I-5Y-reB" userLabel="Health Defeat Controller" customClass="HealthDefeatController" customModule="Counter" customModuleProvider="target">
+                    <connections>
+                        <outlet property="defeatOverlay" destination="3U0-af-W45" id="OJh-Az-Vzx"/>
+                    </connections>
+                </customObject>
+                <tapGestureRecognizer id="1cy-YE-d2g" userLabel="Health Defeat Overlay Tap">
+                    <connections>
+                        <action selector="defeatOverlayTapped:" destination="74I-5Y-reB" id="fvg-fD-bHl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <customObject id="YdU-aN-W2i" customClass="PoisonCounterController" customModule="Counter" customModuleProvider="target">
+                    <connections>
+                        <outlet property="column" destination="pyQ-Mj-GH8" id="tbU-Sw-zay"/>
+                        <outlet property="defeatController" destination="PGk-I6-qKA" id="d95-7p-uYe"/>
+                        <outlet property="display" destination="hL1-Cd-pOU" id="7yu-zf-iNc"/>
+                        <outlet property="toggle" destination="1xz-oA-C4i" id="ZvV-36-bH9"/>
+                    </connections>
+                </customObject>
+                <customObject id="PGk-I6-qKA" userLabel="Poison Defeat Controller" customClass="PoisonDefeatController" customModule="Counter" customModuleProvider="target">
+                    <connections>
+                        <outlet property="defeatOverlay" destination="EAY-FP-7sJ" id="N8z-40-bhF"/>
+                    </connections>
+                </customObject>
+                <tapGestureRecognizer id="ePI-aW-kaT" userLabel="Poison Defeat Overlay Tap">
+                    <connections>
+                        <action selector="defeatOverlayTapped:" destination="PGk-I6-qKA" id="68G-nB-Z1g"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <customObject id="JXG-BA-ie5" customClass="LoyalityCounterController" customModule="Counter" customModuleProvider="target">
+                    <connections>
+                        <outlet property="column" destination="nWO-sW-bHG" id="4An-pQ-Ofh"/>
+                        <outlet property="display" destination="HGx-84-JDR" id="JOr-Xn-IqV"/>
+                        <outlet property="toggle" destination="t7p-a7-rSt" id="117-Lt-yho"/>
+                    </connections>
+                </customObject>
+                <customObject id="tx8-qu-ikb" userLabel="Extra One Counter Controller" customClass="CounterController" customModule="Counter" customModuleProvider="target">
+                    <connections>
+                        <outlet property="column" destination="ii0-ri-HUu" id="0q1-Qh-LZb"/>
+                        <outlet property="display" destination="LOm-1r-UTF" id="FQ5-Ok-AiQ"/>
+                    </connections>
+                </customObject>
+                <customObject id="wHM-y6-PVB" userLabel="Extra Two Counter Controller" customClass="CounterController" customModule="Counter" customModuleProvider="target">
+                    <connections>
+                        <outlet property="column" destination="kt7-aO-rtg" id="9Cw-Oz-oGg"/>
+                        <outlet property="display" destination="0bf-B7-363" id="49v-hj-I2x"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1040" y="390"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KMi-yn-fYg"/>
+    </inferredMetricsTieBreakers>
+</document>
