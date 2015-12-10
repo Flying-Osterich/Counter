@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="448" y="390"/>
         </scene>
-        <!--Counter View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="WsJ-hU-vAM">
             <objects>
-                <viewController id="jQg-3f-jGn" customClass="CounterViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jQg-3f-jGn" customClass="PlayerViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M3n-Bv-YBJ"/>
                         <viewControllerLayoutGuide type="bottom" id="mpt-LW-L7a"/>

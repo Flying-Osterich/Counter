@@ -48,7 +48,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
 }
 
 // MARK: Embedded
-class CounterViewController : UIViewController {
+class PlayerViewController : UIViewController {
 
     @IBOutlet weak var healthCounterController : HealthCounterController!
     @IBOutlet weak var poisonCounterController : PoisonCounterController!
