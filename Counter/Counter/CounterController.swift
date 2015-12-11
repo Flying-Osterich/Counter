@@ -47,6 +47,10 @@ class CounterController : UIViewController {
         increaseCounterBy(1)
     }
     
+    @IBOutlet weak var plusCounterButton: UIButton!
+    @IBOutlet weak var minusCounterButton: UIButton!
+
+    
     
     var isDisplayed : Bool { get { return column.hidden == false } }
     

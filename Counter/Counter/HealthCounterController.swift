@@ -27,4 +27,7 @@ class HealthCounterController : MortalController {
     @IBAction func counterPlusFiveButtonTapped(sender: AnyObject) {
         increaseCounterBy(5)
     }
+    
+    @IBOutlet weak var plusFiveCounterButton: UIButton!
+    @IBOutlet weak var minusFiveCounterButton: UIButton!
 }

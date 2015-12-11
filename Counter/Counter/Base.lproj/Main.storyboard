@@ -442,6 +442,10 @@
                         <outlet property="column" destination="r3a-qF-Oc4" id="l8s-ow-Cks"/>
                         <outlet property="defeatController" destination="74I-5Y-reB" id="6lo-9J-pxo"/>
                         <outlet property="display" destination="3N9-5N-Vwk" id="BYn-7A-JbY"/>
+                        <outlet property="minusCounterButton" destination="NG9-Bq-jdm" id="MZ9-BV-af4"/>
+                        <outlet property="minusFiveCounterButton" destination="sge-Jo-GGH" id="asA-8V-de3"/>
+                        <outlet property="plusCounterButton" destination="h50-Sd-raC" id="HuC-Ds-k3S"/>
+                        <outlet property="plusFiveCounterButton" destination="LF0-St-OgZ" id="aLg-Eo-b4c"/>
                     </connections>
                 </customObject>
                 <customObject id="74I-5Y-reB" userLabel="Health Defeat Controller" customClass="HealthDefeatController" customModule="Counter" customModuleProvider="target">
@@ -459,6 +463,7 @@
                         <outlet property="column" destination="pyQ-Mj-GH8" id="tbU-Sw-zay"/>
                         <outlet property="defeatController" destination="PGk-I6-qKA" id="d95-7p-uYe"/>
                         <outlet property="display" destination="hL1-Cd-pOU" id="7yu-zf-iNc"/>
+                        <outlet property="plusCounterButton" destination="JRH-W4-KDI" id="xBc-TR-UwU"/>
                         <outlet property="toggle" destination="1xz-oA-C4i" id="ZvV-36-bH9"/>
                     </connections>
                 </customObject>
@@ -476,6 +481,8 @@
                     <connections>
                         <outlet property="column" destination="nWO-sW-bHG" id="4An-pQ-Ofh"/>
                         <outlet property="display" destination="HGx-84-JDR" id="JOr-Xn-IqV"/>
+                        <outlet property="minusCounterButton" destination="d3i-Vk-JF6" id="ZFE-bX-yHU"/>
+                        <outlet property="plusCounterButton" destination="hpP-Cq-XTN" id="vNN-Qc-OH3"/>
                         <outlet property="toggle" destination="t7p-a7-rSt" id="117-Lt-yho"/>
                     </connections>
                 </customObject>
@@ -483,12 +490,16 @@
                     <connections>
                         <outlet property="column" destination="ii0-ri-HUu" id="0q1-Qh-LZb"/>
                         <outlet property="display" destination="LOm-1r-UTF" id="FQ5-Ok-AiQ"/>
+                        <outlet property="minusCounterButton" destination="szx-sV-mlU" id="MfW-iD-CKZ"/>
+                        <outlet property="plusCounterButton" destination="pxq-bR-Gnd" id="txE-y4-gqT"/>
                     </connections>
                 </customObject>
                 <customObject id="wHM-y6-PVB" userLabel="Extra Two Counter Controller" customClass="CounterController" customModule="Counter" customModuleProvider="target">
                     <connections>
                         <outlet property="column" destination="kt7-aO-rtg" id="9Cw-Oz-oGg"/>
                         <outlet property="display" destination="0bf-B7-363" id="49v-hj-I2x"/>
+                        <outlet property="minusCounterButton" destination="8Ui-ms-H7D" id="hok-Sq-nEF"/>
+                        <outlet property="plusCounterButton" destination="RBu-6z-lUL" id="KE5-PA-7Nn"/>
                     </connections>
                 </customObject>
             </objects>
