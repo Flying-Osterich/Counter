@@ -19,9 +19,14 @@ class ViewController: UIViewController, ADBannerViewDelegate {
         rightPlayerContainer?.rotateView(.Right)
     }
     
+    func accessiblisePlayerContainers () {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         containersFaceYourPlayer()
+        accessiblisePlayerContainers()
     }
     
     func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
