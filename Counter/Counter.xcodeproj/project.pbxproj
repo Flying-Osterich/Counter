@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED32247F1C1A842C003AF290 /* HealthCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32247E1C1A842C003AF290 /* HealthCounterController.swift */; };
+		ED3224811C1A8455003AF290 /* PoisonCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3224801C1A8455003AF290 /* PoisonCounterController.swift */; };
+		ED3224831C1A84A7003AF290 /* LoyaltyCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3224821C1A84A7003AF290 /* LoyaltyCounterController.swift */; };
+		ED3224881C1A8524003AF290 /* CounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3224871C1A8524003AF290 /* CounterController.swift */; };
+		ED32248B1C1A8640003AF290 /* MortalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248A1C1A8640003AF290 /* MortalController.swift */; };
+		ED32248D1C1A86A6003AF290 /* DefeatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248C1C1A86A6003AF290 /* DefeatController.swift */; };
+		ED32248F1C1A86FD003AF290 /* UIView+RotateOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248E1C1A86FD003AF290 /* UIView+RotateOrientation.swift */; };
 		ED5A6CBC1C09624E0025449B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5A6CBB1C09624E0025449B /* iAd.framework */; };
 		ED7C35441C02AA5E00D87818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7C35431C02AA5E00D87818 /* AppDelegate.swift */; };
 		ED7C35461C02AA5E00D87818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7C35451C02AA5E00D87818 /* ViewController.swift */; };
@@ -35,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED32247E1C1A842C003AF290 /* HealthCounterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthCounterController.swift; sourceTree = "<group>"; };
+		ED3224801C1A8455003AF290 /* PoisonCounterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoisonCounterController.swift; sourceTree = "<group>"; };
+		ED3224821C1A84A7003AF290 /* LoyaltyCounterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoyaltyCounterController.swift; sourceTree = "<group>"; };
+		ED3224871C1A8524003AF290 /* CounterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterController.swift; sourceTree = "<group>"; };
+		ED32248A1C1A8640003AF290 /* MortalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MortalController.swift; sourceTree = "<group>"; };
+		ED32248C1C1A86A6003AF290 /* DefeatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefeatController.swift; sourceTree = "<group>"; };
+		ED32248E1C1A86FD003AF290 /* UIView+RotateOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RotateOrientation.swift"; sourceTree = "<group>"; };
 		ED5A6CBB1C09624E0025449B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		ED7C35401C02AA5E00D87818 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7C35431C02AA5E00D87818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +91,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED32247D1C1A8401003AF290 /* CounterControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED3224871C1A8524003AF290 /* CounterController.swift */,
+				ED3224821C1A84A7003AF290 /* LoyaltyCounterController.swift */,
+				ED32248C1C1A86A6003AF290 /* DefeatController.swift */,
+				ED32248A1C1A8640003AF290 /* MortalController.swift */,
+				ED32247E1C1A842C003AF290 /* HealthCounterController.swift */,
+				ED3224801C1A8455003AF290 /* PoisonCounterController.swift */,
+			);
+			name = CounterControllers;
+			sourceTree = "<group>";
+		};
+		ED3224901C1A874D003AF290 /* CustomTools */ = {
+			isa = PBXGroup;
+			children = (
+				ED32248E1C1A86FD003AF290 /* UIView+RotateOrientation.swift */,
+			);
+			name = CustomTools;
+			sourceTree = "<group>";
+		};
 		ED7C35371C02AA5E00D87818 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +138,8 @@
 				ED7C35431C02AA5E00D87818 /* AppDelegate.swift */,
 				ED7C35451C02AA5E00D87818 /* ViewController.swift */,
 				ED7C35471C02AA5E00D87818 /* Main.storyboard */,
+				ED32247D1C1A8401003AF290 /* CounterControllers */,
+				ED3224901C1A874D003AF290 /* CustomTools */,
 				ED7C354A1C02AA5E00D87818 /* Assets.xcassets */,
 				ED7C354C1C02AA5E00D87818 /* LaunchScreen.storyboard */,
 				ED7C354F1C02AA5E00D87818 /* Info.plist */,
@@ -268,8 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3224811C1A8455003AF290 /* PoisonCounterController.swift in Sources */,
+				ED32247F1C1A842C003AF290 /* HealthCounterController.swift in Sources */,
+				ED3224881C1A8524003AF290 /* CounterController.swift in Sources */,
 				ED7C35461C02AA5E00D87818 /* ViewController.swift in Sources */,
+				ED3224831C1A84A7003AF290 /* LoyaltyCounterController.swift in Sources */,
 				ED7C35441C02AA5E00D87818 /* AppDelegate.swift in Sources */,
+				ED32248D1C1A86A6003AF290 /* DefeatController.swift in Sources */,
+				ED32248F1C1A86FD003AF290 /* UIView+RotateOrientation.swift in Sources */,
+				ED32248B1C1A8640003AF290 /* MortalController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
