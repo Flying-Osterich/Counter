@@ -33,4 +33,34 @@ class CounterUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testLeftPlayerContainerExists() {
+        XCUIApplication().otherElements.containingType(.Image, identifier:"iAd Seed Ad").childrenMatchingType(.Other).elementBoundByIndex(1)
+    }
+    
+    func testLeftPlayerContainerContainsHealthMinusFiveAction() {
+        let element = XCUIApplication().otherElements.containingType(.Image, identifier:"iAd Seed Ad").childrenMatchingType(.Other).elementBoundByIndex(1)
+        element.buttons["Health Minus Five Action"]
+    }
+    
+    func testLeftPlayerHealthMinusFiveActionWillProduceDefeatWithFourUses() {
+        let element = XCUIApplication().otherElements.containingType(.Image, identifier:"iAd Seed Ad").childrenMatchingType(.Other).elementBoundByIndex(1)
+        let healthMinusFiveActionButton = element.buttons["Health Minus Five Action"]
+        healthMinusFiveActionButton.tap()
+        healthMinusFiveActionButton.tap()
+        healthMinusFiveActionButton.tap()
+        healthMinusFiveActionButton.tap()
+        element.otherElements["Health Defeat Overlay"]
+    }
+    
+    func testLeftPlayerHealthDefeatOverlayIsTappable() {
+        let element = XCUIApplication().otherElements.containingType(.Image, identifier:"iAd Seed Ad").childrenMatchingType(.Other).elementBoundByIndex(1)
+        let healthMinusFiveActionButton = element.buttons["Health Minus Five Action"]
+        healthMinusFiveActionButton.tap()
+        healthMinusFiveActionButton.tap()
+        healthMinusFiveActionButton.tap()
+        healthMinusFiveActionButton.tap()
+        element.otherElements["Health Defeat Overlay"].tap()
+        
+    }
+    
 }

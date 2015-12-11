@@ -233,6 +233,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sge-Jo-GGH">
                                         <rect key="frame" x="0.0" y="195" width="43" height="44"/>
                                         <animations/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Health Minus Five Action"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="5">
                                             <color key="titleColor" red="0.59068226440000005" green="0.07010461992" blue="0.3004954574" alpha="1" colorSpace="calibratedRGB"/>
@@ -358,6 +359,9 @@
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Poison Defeat Overlay">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstItem="JqQ-3h-Ret" firstAttribute="centerX" secondItem="EAY-FP-7sJ" secondAttribute="centerX" id="OhV-8r-CzY"/>
                                     <constraint firstItem="JqQ-3h-Ret" firstAttribute="centerY" secondItem="EAY-FP-7sJ" secondAttribute="centerY" id="rce-9y-bi7"/>
@@ -383,6 +387,9 @@
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Health Defeat Overlay">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstItem="tSs-ut-L4R" firstAttribute="centerX" secondItem="3U0-af-W45" secondAttribute="centerX" id="NIm-sL-S7Y"/>
                                     <constraint firstItem="tSs-ut-L4R" firstAttribute="centerY" secondItem="3U0-af-W45" secondAttribute="centerY" id="vdm-rK-COr"/>
