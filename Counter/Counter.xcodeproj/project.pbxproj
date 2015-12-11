@@ -14,6 +14,7 @@
 		ED32248B1C1A8640003AF290 /* MortalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248A1C1A8640003AF290 /* MortalController.swift */; };
 		ED32248D1C1A86A6003AF290 /* DefeatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248C1C1A86A6003AF290 /* DefeatController.swift */; };
 		ED32248F1C1A86FD003AF290 /* UIView+RotateOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248E1C1A86FD003AF290 /* UIView+RotateOrientation.swift */; };
+		ED3224951C1A88E8003AF290 /* HealthCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32247E1C1A842C003AF290 /* HealthCounterController.swift */; };
 		ED5A6CBC1C09624E0025449B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5A6CBB1C09624E0025449B /* iAd.framework */; };
 		ED7C35441C02AA5E00D87818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7C35431C02AA5E00D87818 /* AppDelegate.swift */; };
 		ED7C35461C02AA5E00D87818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7C35451C02AA5E00D87818 /* ViewController.swift */; };
