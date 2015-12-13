@@ -14,7 +14,10 @@
 		ED32248B1C1A8640003AF290 /* MortalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248A1C1A8640003AF290 /* MortalController.swift */; };
 		ED32248D1C1A86A6003AF290 /* DefeatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248C1C1A86A6003AF290 /* DefeatController.swift */; };
 		ED32248F1C1A86FD003AF290 /* UIView+RotateOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32248E1C1A86FD003AF290 /* UIView+RotateOrientation.swift */; };
-		ED3224951C1A88E8003AF290 /* HealthCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32247E1C1A842C003AF290 /* HealthCounterController.swift */; };
+		ED32249F1C1DEB3B003AF290 /* UIViewController+AccessibleOutlets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32249E1C1DEB3B003AF290 /* UIViewController+AccessibleOutlets.swift */; };
+		ED3224A51C1DEC22003AF290 /* UIViewControllerExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3224A41C1DEC22003AF290 /* UIViewControllerExtensionTests.swift */; };
+		ED3224A71C1DEC37003AF290 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3224A61C1DEC37003AF290 /* TestStoryboard.storyboard */; };
+		ED3224AA1C1DF631003AF290 /* UIViewController+AccessibleOutlets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32249E1C1DEB3B003AF290 /* UIViewController+AccessibleOutlets.swift */; };
 		ED5A6CBC1C09624E0025449B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5A6CBB1C09624E0025449B /* iAd.framework */; };
 		ED7C35441C02AA5E00D87818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7C35431C02AA5E00D87818 /* AppDelegate.swift */; };
 		ED7C35461C02AA5E00D87818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7C35451C02AA5E00D87818 /* ViewController.swift */; };
@@ -50,6 +53,9 @@
 		ED32248A1C1A8640003AF290 /* MortalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MortalController.swift; sourceTree = "<group>"; };
 		ED32248C1C1A86A6003AF290 /* DefeatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefeatController.swift; sourceTree = "<group>"; };
 		ED32248E1C1A86FD003AF290 /* UIView+RotateOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RotateOrientation.swift"; sourceTree = "<group>"; };
+		ED32249E1C1DEB3B003AF290 /* UIViewController+AccessibleOutlets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AccessibleOutlets.swift"; sourceTree = "<group>"; };
+		ED3224A41C1DEC22003AF290 /* UIViewControllerExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTests.swift; sourceTree = "<group>"; };
+		ED3224A61C1DEC37003AF290 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		ED5A6CBB1C09624E0025449B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		ED7C35401C02AA5E00D87818 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7C35431C02AA5E00D87818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				ED32248E1C1A86FD003AF290 /* UIView+RotateOrientation.swift */,
+				ED32249E1C1DEB3B003AF290 /* UIViewController+AccessibleOutlets.swift */,
 			);
 			name = CustomTools;
 			sourceTree = "<group>";
@@ -153,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				ED7C35581C02AA5E00D87818 /* CounterTests.swift */,
+				ED3224A41C1DEC22003AF290 /* UIViewControllerExtensionTests.swift */,
+				ED3224A61C1DEC37003AF290 /* TestStoryboard.storyboard */,
 				ED7C355A1C02AA5E00D87818 /* Info.plist */,
 			);
 			path = CounterTests;
@@ -289,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3224A71C1DEC37003AF290 /* TestStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +323,7 @@
 				ED3224831C1A84A7003AF290 /* LoyaltyCounterController.swift in Sources */,
 				ED7C35441C02AA5E00D87818 /* AppDelegate.swift in Sources */,
 				ED32248D1C1A86A6003AF290 /* DefeatController.swift in Sources */,
+				ED32249F1C1DEB3B003AF290 /* UIViewController+AccessibleOutlets.swift in Sources */,
 				ED32248F1C1A86FD003AF290 /* UIView+RotateOrientation.swift in Sources */,
 				ED32248B1C1A8640003AF290 /* MortalController.swift in Sources */,
 			);
@@ -322,6 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3224A51C1DEC22003AF290 /* UIViewControllerExtensionTests.swift in Sources */,
+				ED3224AA1C1DF631003AF290 /* UIViewController+AccessibleOutlets.swift in Sources */,
 				ED7C35591C02AA5E00D87818 /* CounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
