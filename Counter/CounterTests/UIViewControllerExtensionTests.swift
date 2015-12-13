@@ -38,7 +38,7 @@ class UIViewControllerExtensionTests: XCTestCase {
     
     func testAccessiblityExtensionMethod() {
         if let testSubject = variableTestSubject {
-            let labels = testSubject.accessibliseWithVarName()
+            let labels = testSubject.accessiblisePropertiesWithVarName()
             XCTAssert(labels.contains("subview"))
             XCTAssert(labels.contains("label"))
             XCTAssert(labels.contains("button"))
